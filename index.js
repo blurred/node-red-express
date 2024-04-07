@@ -9,12 +9,15 @@ const server = http.createServer(app)
 
 const moment = require("moment")
 
+const credentialSecret = "jawakaw";
+
 const settings = {
   httpAdminRoot: '/',
   httpNodeRoot: '/', // /api
   userDir: './',
   flowFile: 'flows.json',
   apiMaxLength: '50mb',
+  credentialSecret: credentialSecret,
   // editorTheme: {
     // page: {
     //   css: path.join(__dirname, "/ui-styles/midnight.css"),
